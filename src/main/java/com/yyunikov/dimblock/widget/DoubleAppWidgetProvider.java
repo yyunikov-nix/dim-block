@@ -50,6 +50,7 @@ public class DoubleAppWidgetProvider extends AppWidgetProvider {
                          int[] appWidgetIds) {
         // Update each requested appWidgetId
         final DimPreferenceController controller = new DimPreferenceController(context);
+
         final RemoteViews view = buildUpdate(context, controller.isDimBlocked(), controller);
 
         for (final int appWidgetId : appWidgetIds) {
